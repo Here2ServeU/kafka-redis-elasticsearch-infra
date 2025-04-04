@@ -102,9 +102,8 @@ terraform destroy
 ```
 
 ---
-<div align="center">
 
-## About the Author
+## <div align="center">About the Author</div>
 
 <div align="center">
   <img src="assets/emmanuel-naweji.jpg" alt="Emmanuel Naweji" width="120" style="border-radius: 50%;">
