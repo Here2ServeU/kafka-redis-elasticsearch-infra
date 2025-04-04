@@ -2,10 +2,26 @@ provider "aws" {
   region = var.region
 }
 
+resource "tls_private_key" "web_app_key" {
+  algorithm = "RSA"
+  rsa_bits  = var.rsa_bits
+}
+
+resource "aws_key_pair" "web_app_key_pair" {
+  key_name   = var.key_name
+  public_key = tls_private_key.web_app_key.public_key_openssh
+}
+
+resource "local_file" "private_key" {
+  filename        = "${path.module}/${var.private_key_filename}"
+  content         = tls_private_key.web_app_key.private_key_pem
+  file_permission = "0400"
+}
+
 resource "aws_instance" "kafka" {
   ami                    = var.ami
   instance_type          = var.instance_type
-  key_name               = var.key_name
+  key_name               = aws_key_pair.web_app_key_pair.key_name
   subnet_id              = var.subnet_id
   vpc_security_group_ids = [aws_security_group.app_sg.id]
 
@@ -17,7 +33,7 @@ resource "aws_instance" "kafka" {
 resource "aws_instance" "redis" {
   ami                    = var.ami
   instance_type          = var.instance_type
-  key_name               = var.key_name
+  key_name               = aws_key_pair.web_app_key_pair.key_name
   subnet_id              = var.subnet_id
   vpc_security_group_ids = [aws_security_group.app_sg.id]
 
@@ -29,7 +45,7 @@ resource "aws_instance" "redis" {
 resource "aws_instance" "elasticsearch" {
   ami                    = var.ami
   instance_type          = var.instance_type
-  key_name               = var.key_name
+  key_name               = aws_key_pair.web_app_key_pair.key_name
   subnet_id              = var.subnet_id
   vpc_security_group_ids = [aws_security_group.app_sg.id]
 

@@ -23,8 +23,8 @@ kafka-redis-elasticsearch-infra/
 ├── terraform/
 │  ├── main.tf
 │  ├── variables.tf
-│   ├── terraform.tfvars
-│   └── outputs.tf
+│ ├─ terraform.tfvars
+│ ├── outputs.tf
 ├── ansible/
 │   ├── inventories/
 │   │   └── prod.ini
