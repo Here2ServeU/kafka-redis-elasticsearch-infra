@@ -102,6 +102,7 @@ terraform destroy
 ```
 
 ---
+<div align="center">
 
 ## About the Author
 
