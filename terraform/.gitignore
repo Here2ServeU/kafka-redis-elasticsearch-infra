@@ -1,20 +1,10 @@
 notes.md
 
-terraform/terraform.tfvars
+terraform.tfvars
 terraform.tfstate
 terraform.tfstate.backup
 .terraform/
 .terraform.lock.hcl
-*.tfvars
-*.tfstate
-*.tfstate.*
-*.tfvars.json
-*.tfstate.json
-*.tfstate.backup
-*.tfvars.local
-*.tfvars.json
-*.tfstate.json
-*.tfstate.backup
-*.tfvars.local
-*.tfvars.json
-*.tfstate.json  
+
+web-app-key.pem
+web-app-key.pub
