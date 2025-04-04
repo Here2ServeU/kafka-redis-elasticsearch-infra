@@ -1,0 +1,6 @@
+region         = "us-east-1"
+ami            = "ami-0c02fb55956c7d316"
+instance_type  = "t2.micro"
+key_name       = "your-key-name"
+subnet_id      = "subnet-xxxxxxxx"
+vpc_id         = "vpc-xxxxxxxx"
