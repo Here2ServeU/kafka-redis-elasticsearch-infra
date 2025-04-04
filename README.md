@@ -21,8 +21,8 @@ This infrastructure is ideal for:
 ```
 kafka-redis-elasticsearch-infra/
 ├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
+│  ├── main.tf
+│  ├── variables.tf
 │   ├── terraform.tfvars
 │   └── outputs.tf
 ├── ansible/
@@ -39,6 +39,8 @@ kafka-redis-elasticsearch-infra/
 │       │   └── tasks/main.yml
 │       └── elasticsearch/
 │           └── tasks/main.yml
+├─ assets/
+│  ├─emmanuel-naweji.jpg
 ```
 
 ## Prerequisites
