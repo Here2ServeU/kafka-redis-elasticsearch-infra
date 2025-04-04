@@ -105,7 +105,7 @@ terraform destroy
 
 ## About the Author
 
-![emmanuel-naweji](https://via.placeholder.com/150)
+![Emmanuel Naweji](assets/emmanuel-naweji.jpg)
 
 **Emmanuel Naweji** is a seasoned Cloud and DevOps Engineer with years of experience helping companies architect and deploy secure, scalable infrastructure. He is the founder of initiatives that train and mentor individuals seeking careers in IT and has helped hundreds transition into Cloud, DevOps, and Infrastructure roles.
 
