@@ -117,3 +117,19 @@ terraform destroy
 - Connect on LinkedIn: [https://www.linkedin.com/in/ready2assist/](https://www.linkedin.com/in/ready2assist/)
 
 Let's connect and discuss how I can help you build reliable, automated infrastructure the right way.
+
+
+---
+
+MIT License
+© 2025 Emmanuel Naweji
+
+You are free to use, copy, modify, merge, publish, distribute, sublicense, or sell
+copies of this software and its associated documentation files (the “Software”),
+provided that the copyright and permission notice appears in all copies
+or substantial portions of the Software.
+
+This Software is provided “as is,” without any warranty — express or implied —
+including but not limited to merchantability, fitness for a particular purpose,
+or non-infringement. In no event will the authors be liable for any claim, damages,
+or other liability arising from the use of the Software.
